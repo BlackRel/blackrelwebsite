@@ -22,15 +22,28 @@ const {
     <!-- favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <SiteMeta
-      title={title}
-      description={description.substring(0, 100)}
-      url={Astro.site
-        ? `${Astro.site}/${title.toLowerCase().replaceAll(' ', '-')}`
-        : `https://accessible-astro.dev/${title.toLowerCase().replaceAll(' ', '-')}`}
-      image={image}
-      author={author}
-    />
+
+  <!-- HTML Meta Tags -->
+  <title>BlackRel Community</title>
+  <meta name="description" content="A community for Black individuals in Developer Advocacy or join DevRel .">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:url" content="https://blackrelwebsite.vercel.app/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BlackRel Community">
+  <meta property="og:description" content="A community for Black individuals in Developer Advocacy or join DevRel .">
+  <meta property="og:image" content="https://user-images.githubusercontent.com/77285384/210414273-f6775b31-6cfb-481a-84f4-96fbe9a46098.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="blackrelwebsite.vercel.app">
+  <meta property="twitter:url" content="https://blackrelwebsite.vercel.app/">
+  <meta name="twitter:title" content="BlackRel Community">
+  <meta name="twitter:description" content="A community for Black individuals in Developer Advocacy or join DevRel .">
+  <meta name="twitter:image" content="https://user-images.githubusercontent.com/77285384/210414273-f6775b31-6cfb-481a-84f4-96fbe9a46098.png">
+
+  <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+        
   </head>
   <body>
     <Header />
